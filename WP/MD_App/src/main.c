@@ -1,37 +1,40 @@
 #include <stdio.h> 
-#include <stdint.h> 
-#include "xil_printf.h"
-#include "basys3.h"
+#include "platform.h"
+#include "basys3_dependancies/basys3.h"
 
+#define SMALL_THRESH 324
+#define MED_THRESH 280
+#define LARGE_THRESH 241
+typedef enum { 
+    IDLE, DETECT, 
+    HOLD, RST
+} detect_t; 
+static detect_t current_state; 
 
-void seg_disp (uint8_t data[4], uint8_t cursor){
-    const uint8_t disp_lut[16] = {
-        0xc0, 0xf9, 0xa4, 0xb0, 
-        0x99, 0x92, 0x82, 0xf8, 
-        0x80, 0x90, 0x88
-    };
-    
-    static uint8_t digit = 0;
-    static uint32_t cnt = 0; 
+uint32_t read_adc_val(void); 
+uint8_t size_cmp(uint32_t volt_val); 
 
-    AN = 0xff; 
-    SEG = disp_lut[data[digit]]; 
-    AN = ~(1<<digit); 
-    digit = (digit + 1) % 4;
-    cnt = (cnt + 1) % 1000; 
-    int current_lit_digit = (digit + 3) % 4; 
-
-    if (current_lit_digit == 1) SEG &= 0x7F; 
-    if (current_lit_digit == cursor && cnt > 500) SEG = 0xff; 
-}
-
-
-int main() {
-    uint32_t raw_data = JXADC; 
+int main(void) { 
     init_platform(); 
+    uint32_t small_ctr=0, medium_ctr=0, large_ctr=0; 
+    static uint32_t max_adc = 4095; 
     while(1) {
+        uint32_t voltage = read_adc_val(); 
         // Metal Detection Logic
+      
     }
     cleanup_platform();
     return 0;
+}
+
+uint32_t read_adc_val(void) {
+    uint32_t adc_data = JXADC; 
+    return (adc_data>>4);  
+}
+
+uint8_t size_cmp(uint32_t volt_val) {
+    if(volt_val > SMALL_THRESH) return 0; 
+    else if(volt_val > MED_THRESH) return 1; 
+    else if(volt_val > LARGE_THRESH) return 2; 
+    else return 3
 }

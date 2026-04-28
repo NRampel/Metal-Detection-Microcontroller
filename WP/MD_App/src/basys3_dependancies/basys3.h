@@ -1,7 +1,7 @@
 #pragma once
-#include "sensor.h"
-#include "alarm.h"
-#include "platform.h"
+#include <stdint.h>
+#include "sensor/sensor.h"
+#include "alarm/alarm.h"
 
 #define LED (*(volatile uint32_t*) 0x40000008)
 #define SW  (*(volatile uint32_t*) 0x40000000)
@@ -12,5 +12,4 @@
 #define JXADC (*(volatile uint32_t*) 0x44A10000)
 #define REG_CTR (*(volatile uint32_t*) 0x44A20004) 
 
-
-
+void seg_disp (uint8_t data[4], uint8_t cursor); 
