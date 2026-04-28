@@ -34,6 +34,7 @@ set(USER_INCLUDE_DIRECTORIES
 #Example 2: Adding ../../common/helloworld.c will consider the path as relative to this component directory
 #Example 3: Adding ${MY_ENV}/data/helloworld.c are expanded using project-specific environment settings.
 set(USER_COMPILE_SOURCES
+"FSM/fsm.c"
 "basys3_dependancies/alarm/alarm.c"
 "basys3_dependancies/basys3.c"
 "helloworld.c"
