@@ -1,5 +1,5 @@
 {
-  "name": "MD_App",
+  "name": "MD_app",
   "type": "HOST",
   "platform": "MD_plat",
   "domain": "standalone_microblaze_0",

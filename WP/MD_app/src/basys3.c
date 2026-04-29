@@ -1,14 +1,15 @@
 #include "basys3.h"
 
-void seg_disp (uint8_t data[4], uint8_t cursor) {
+void seg_disp (uint8_t data[4], uint8_t cursor){
     const uint8_t disp_lut[16] = {
         0xc0, 0xf9, 0xa4, 0xb0, 
         0x99, 0x92, 0x82, 0xf8, 
-        0x80, 0x90, 0x88
+        0x80, 0x90, 0x88, 0x83, 
+        0xc6, 0xa1, 0x86, 0x8e
     };
     
     static uint8_t digit = 0;
-    static uint32_t cnt = 0; 
+    static uint16_t cnt = 0; 
 
     AN = 0xff; 
     SEG = disp_lut[data[digit]]; 

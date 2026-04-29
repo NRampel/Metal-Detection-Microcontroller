@@ -3,7 +3,7 @@
 
 #define ONE_MS 100*1000
 #define ONE_US 100 
-#define DELAY 2000
+#define TWO_SEC 2000
 
 #define ALARM_CTR (*(volatile uint32_t*) 0x44A00000)
 #define ALARM0 (*(volatile uint32_t*) 0x44A00004)

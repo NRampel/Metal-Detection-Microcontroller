@@ -4,7 +4,7 @@
     {
       "type": "tcf-debug",
       "request": "launch",
-      "name": "MD_App_app_hw_1",
+      "name": "MD_app_app_hw_1",
       "debugType": "baremetal-fpga",
       "attachToRunningTargetOptions": {
         "targetSetupMode": "standalone",
@@ -27,12 +27,12 @@
           "plDevice": "Auto Detect",
           "psDevice": "Auto Detect"
         },
-        "bitstreamFile": "${workspaceFolder}\\MD_App\\_ide\\bitstream\\MicroBlaze_wrapper.bit",
+        "bitstreamFile": "${workspaceFolder}\\MD_app\\_ide\\bitstream\\MicroBlaze_wrapper.bit",
         "downloadElf": [
           {
             "core": "microblaze_0",
             "resetProcessor": true,
-            "elfFile": "${workspaceFolder}\\MD_App\\build\\MD_App.elf",
+            "elfFile": "${workspaceFolder}\\MD_app\\build\\MD_app.elf",
             "stopAtEntry": false,
             "isSelfRelocatingApp": false,
             "relativeAddress": ""

@@ -2,9 +2,9 @@
 # SPDX-License-Identifier: MIT
 cmake_minimum_required(VERSION 3.16)
 
-include(${CMAKE_CURRENT_SOURCE_DIR}/Hello_worldExample.cmake)
+# include(${CMAKE_CURRENT_SOURCE_DIR}/Hello_worldExample.cmake)
 include(${CMAKE_CURRENT_SOURCE_DIR}/UserConfig.cmake)
-set(APP_NAME MD_App)
+set(APP_NAME MD_app)
 project(${APP_NAME})
 
 enable_language(C ASM CXX)
@@ -14,7 +14,7 @@ collect(PROJECT_LIB_DEPS xil)
 collect(PROJECT_LIB_DEPS gcc)
 collect(PROJECT_LIB_DEPS c)
 
-list (APPEND _sources ${USER_COMPILE_SOURCES})
+set(_sources "main.c" "fsm.c" "alarm.c" "platform.c" "basys3.c")
 foreach (source ${_sources})
     get_filename_component(ext ${source} EXT)
     list(APPEND src_ext ${ext})
