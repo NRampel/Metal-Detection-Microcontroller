@@ -1,6 +1,8 @@
-# 2026-04-29T11:43:26.237487500
+# 2026-04-29T10:48:09.414804100
 import vitis
 
 client = vitis.create_client()
 client.set_workspace(path="WP")
+
+vitis.dispose()
 
