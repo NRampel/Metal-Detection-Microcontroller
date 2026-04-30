@@ -12,3 +12,25 @@ client.delete_component(name="componentName")
 
 comp = client.create_app_component(name="MD_app",platform = "$COMPONENT_LOCATION/../MD_plat/export/MD_plat/MD_plat.xpfm",domain = "standalone_microblaze_0",template = "hello_world")
 
+platform = client.get_component(name="MD_plat")
+status = platform.build()
+
+comp = client.get_component(name="MD_app")
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+

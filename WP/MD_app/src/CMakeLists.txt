@@ -2,7 +2,6 @@
 # SPDX-License-Identifier: MIT
 cmake_minimum_required(VERSION 3.16)
 
-include(${CMAKE_CURRENT_SOURCE_DIR}/Hello_worldExample.cmake)
 include(${CMAKE_CURRENT_SOURCE_DIR}/UserConfig.cmake)
 set(APP_NAME MD_app)
 project(${APP_NAME})
@@ -14,7 +13,18 @@ collect(PROJECT_LIB_DEPS xil)
 collect(PROJECT_LIB_DEPS gcc)
 collect(PROJECT_LIB_DEPS c)
 
-list (APPEND _sources ${USER_COMPILE_SOURCES})
+# ====================================================================
+# FIX: Removed the extra /src/ from the paths. 
+# CMAKE_CURRENT_SOURCE_DIR is already the src folder.
+# ====================================================================
+set(_sources 
+    "${CMAKE_CURRENT_SOURCE_DIR}/main.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/platform.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/basys3.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/fsm.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/alarm.c"
+)
+
 foreach (source ${_sources})
     get_filename_component(ext ${source} EXT)
     list(APPEND src_ext ${ext})
@@ -49,5 +59,11 @@ set(_linker_command "-Wl,-T -Wl,\"${USER_LINKER_SCRIPT}\" -L\"${CMAKE_SOURCE_DIR
 target_link_libraries(${APP_NAME}.elf ${_linker_command})
 target_compile_definitions(${APP_NAME}.elf PUBLIC ${USER_COMPILE_DEFINITIONS})
 target_include_directories(${APP_NAME}.elf PUBLIC ${USER_INCLUDE_DIRECTORIES})
+
+# ====================================================================
+# FIX: Adjusted include path to match the current source directory
+# ====================================================================
+target_include_directories(${APP_NAME}.elf PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
+
 print_build_info_target(${APP_NAME}.elf "${CMAKE_C_FLAGS}" "${USER_COMPILE_DEFINITIONS}" "${CMAKE_C_LINK_FLAGS}" "${_linker_command}")
 print_elf_size(CMAKE_SIZE ${APP_NAME})
