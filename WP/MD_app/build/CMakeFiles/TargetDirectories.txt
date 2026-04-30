@@ -1,0 +1,4 @@
+C:/Metal-Detector-Firmware/WP/MD_app/build/CMakeFiles/MD_app.elf.dir
+C:/Metal-Detector-Firmware/WP/MD_app/build/CMakeFiles/print_build_info.dir
+C:/Metal-Detector-Firmware/WP/MD_app/build/CMakeFiles/edit_cache.dir
+C:/Metal-Detector-Firmware/WP/MD_app/build/CMakeFiles/rebuild_cache.dir

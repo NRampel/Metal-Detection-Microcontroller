@@ -1,0 +1,17 @@
+# ninja log v5
+25	236	0	CMakeFiles/print_build_info	e65030cd69b91792
+25	236	0	C:/Metal-Detector-Firmware/WP/MD_app/build/CMakeFiles/print_build_info	e65030cd69b91792
+250	336	7991990848912255	CMakeFiles/MD_app.elf.dir/alarm.c.obj	50182fd14423e54c
+243	341	7991990848971080	CMakeFiles/MD_app.elf.dir/fsm.c.obj	3354b8e700b86d0f
+264	356	7991990849121295	CMakeFiles/MD_app.elf.dir/basys3.c.obj	210b15ac8136ec68
+236	357	7991990849136517	CMakeFiles/MD_app.elf.dir/main.c.obj	87fd1a5744e3958f
+256	394	7991990849512687	CMakeFiles/MD_app.elf.dir/platform.c.obj	95dab0db5a5239d8
+394	598	7991990851066896	MD_app.elf	aec3e4aedb279a2d
+29	183	0	CMakeFiles/print_build_info	e65030cd69b91792
+29	183	0	C:/Metal-Detector-Firmware/WP/MD_app/build/CMakeFiles/print_build_info	e65030cd69b91792
+190	285	7991992483409740	CMakeFiles/MD_app.elf.dir/fsm.c.obj	3354b8e700b86d0f
+196	295	7991992483514850	CMakeFiles/MD_app.elf.dir/alarm.c.obj	50182fd14423e54c
+210	304	7991992483600042	CMakeFiles/MD_app.elf.dir/basys3.c.obj	210b15ac8136ec68
+184	315	7991992483703587	CMakeFiles/MD_app.elf.dir/main.c.obj	87fd1a5744e3958f
+202	351	7991992484098390	CMakeFiles/MD_app.elf.dir/platform.c.obj	95dab0db5a5239d8
+351	561	7991992485712488	MD_app.elf	aec3e4aedb279a2d
