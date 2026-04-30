@@ -4,7 +4,7 @@
 //Part of scanning state
 uint16_t read_adc_val(void) {
     uint32_t raw_adc = JXADC_6; 
-    return((uint16_t)((raw_adc>>4))); 
+    return((uint16_t)((raw_adc>>4)&0x0FFF)); 
 }
 
 //to return a size value
