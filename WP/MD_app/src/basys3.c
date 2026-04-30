@@ -16,7 +16,7 @@ void seg_disp (uint8_t data[4], uint8_t cursor){
     AN = ~(1<<digit); 
     digit = (digit + 1) % 4;
     cnt = (cnt + 1) % 1000; 
-    int current_lit_digit = (digit + 3) % 4; 
+    uint8_t current_lit_digit = (digit + 3) % 4; 
 
     if (current_lit_digit == 1) SEG &= 0x7F; 
     if (current_lit_digit == cursor && cnt > 500) SEG = 0xff; 
