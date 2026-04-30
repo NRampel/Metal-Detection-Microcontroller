@@ -2,10 +2,12 @@
 #include "platform.h"
 #include "fsm.h"
 #include "basys3.h"
-#include "xil_printf.h"
+
+#define THRESH_R 60
 
 typedef enum { 
-    IDLE, DETECT, HOLD
+    IDLE, DETECT, 
+    HOLD, RST
 } detect_t; 
 static detect_t current_state; 
 
@@ -16,6 +18,7 @@ int main(void) {
     static uint16_t min_voltage = 4095;  //(2^n) -1
     uint16_t ctr = 0; 
     const uint16_t max_ctr = 1000; 
+    static uint16_t lockout_ctr = 0; 
     while(1) {
         uint16_t voltage = read_adc_val(); //I want this value to get destroyed after each iteration 
         switch(current_state) {
@@ -23,40 +26,65 @@ int main(void) {
                 if(voltage < T_ENTRY) {
                     min_voltage = 4095; 
                     current_state = DETECT;
+                    lockout_ctr = 0; 
                 } 
                 break; 
             case DETECT:  
                 if(voltage < min_voltage) min_voltage = voltage;
-                if(voltage > T_ENTRY) current_state = HOLD;
+                if(voltage > T_ENTRY) {
+                    if(++lockout_ctr >= THRESH_R) {
+                        current_state = HOLD; 
+                        lockout_ctr = 0; 
+                    }
+                }
+                else lockout_ctr = 0; 
                 break; 
             case HOLD: { //Declaring scope of case statemen
                 uint8_t size = size_cmp(min_voltage); //This value should also be destroyed after each iteration
-                if(size == 1) {
+                if(size == 1 && small_ctr < 9) {
                     ++small_ctr; 
-                    data[0]=small_ctr%10; 
                 }
-                else if(size == 2) {
+                else if(size == 2 && medium_ctr < 9) {
                     medium_ctr++; 
-                    data[1]=medium_ctr%10; 
                 }
-                else if(size == 3) {
+                else if(size == 3 && large_ctr < 9) {
                     ++large_ctr; 
-                    data[2]=large_ctr%10; 
                 }
-                data[3] = (small_ctr + medium_ctr + large_ctr)%10; 
-                current_state = IDLE; 
+                // data[0] = (min_voltage / 1000) % 10; // Thousands digit
+                // data[1] = (min_voltage / 100) % 10;  // Hundreds digit
+                // data[2] = (min_voltage / 10) % 10;   // Tens digit
+                // data[3] = min_voltage % 10;
+                data[0] = small_ctr; 
+                data[1] = medium_ctr; 
+                data[2] = large_ctr; 
+                uint8_t total = small_ctr + medium_ctr + large_ctr; 
+                if(total > 9) total = 9; 
+                data[3] = total;
+                lockout_ctr = 0;             
+                current_state = RST;     
                 break; 
             }
+            case RST: 
+                if(voltage > T_ENTRY) {
+                    if(++lockout_ctr >= THRESH_R) {
+                        lockout_ctr = 0; 
+                        current_state = IDLE; 
+                    }
+                }
+                else lockout_ctr = 0; 
+                break;    
             default: 
                 current_state = IDLE; 
                 break; 
         }
          //arbitrary number, will do the math and calculate later
-        if(ctr++ >= max_ctr) {
-            seg_disp(data, 0xFF);
-            ctr = 0; 
-        }
-        LED = (1 << (voltage / 250));
+        seg_disp(data, 0xFF); 
+        uint16_t drop = (voltage < 2190) ? (2190 - voltage) : 0; 
+        uint8_t strength = drop / 120; 
+        if(strength > 16 ) strength = 16; 
+        if(strength== 16) LED = 0xFFFF; 
+        else LED = (1 << strength) - 1; 
+        for(volatile uint32_t wait=0;wait<10000;wait++);  
     }
     cleanup_platform();
     return 0;
