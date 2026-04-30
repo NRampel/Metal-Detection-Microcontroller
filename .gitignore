@@ -31,8 +31,12 @@ manage_ip_project/
 *.o
 *.d
 *.elf
+.clangd/
+compile_commands.json
+
 
 # Ignore build directories
+build/
 Debug/
 Release/
 .metadata/
@@ -50,3 +54,4 @@ Release/
 *.swp
 *~
 .DS_Store
+
