@@ -1,5 +1,4 @@
 #pragma once
-#include <stdint.h>
 #include "sensor.h"
 #include "alarm.h"
 
