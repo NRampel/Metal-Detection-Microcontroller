@@ -11,4 +11,8 @@
 #define JXADC 0x44A10000
 #define REG_CTR (*(volatile uint32_t*) 0x44A20004) 
 
+void brief_delay(uint32_t ticks); 
 void seg_disp (uint8_t data[4], uint8_t cursor); 
+void display_strength(volatile uint16_t voltage); 
+//void display_sweep(uint8_t data); 
+void display_size_letters(uint8_t data[4]); 
