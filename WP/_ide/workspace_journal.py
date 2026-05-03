@@ -14,3 +14,5 @@ status = platform.build()
 comp = client.get_component(name="MD_app")
 comp.build()
 
+vitis.dispose()
+
