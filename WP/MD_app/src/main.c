@@ -1,4 +1,3 @@
-#include <stdio.h> 
 #include "platform.h"
 #include "fsm.h"
 #include "basys3.h"

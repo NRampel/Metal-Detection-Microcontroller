@@ -1526,21 +1526,6 @@
           }
         }
       }
-    },
-    "elf_association": {
-      "file": {
-        "name": "..\\..\\..\\..\\..\\WP\\MD_app\\build\\MD_app.elf",
-        "type": "ELF",
-        "checksum": "3412033300",
-        "IsVisible": "1",
-        "ScopedToRef": "MicroBlaze",
-        "ScopedToCell": [
-          "U0/microblaze_0"
-        ],
-        "UsedIn": [
-          "implementation"
-        ]
-      }
     }
   }
 }

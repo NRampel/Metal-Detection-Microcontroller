@@ -16,8 +16,8 @@
                 compatible = "cpus,cluster";
                 #address-cells = <0x1>;
                 #size-cells = <0x0>;
-                address-map = <0x0 &microblaze_0_local_memory_dlmb_bram_if_cntlr_memory 0x0 0x4000>,
-                 <0x0 &microblaze_0_local_memory_dlmb_bram_if_cntlr 0x0 0x4000>,
+                address-map = <0x0 &microblaze_0_local_memory_dlmb_bram_if_cntlr_memory 0x0 0x20000>,
+                 <0x0 &microblaze_0_local_memory_dlmb_bram_if_cntlr 0x0 0x20000>,
                  <0x40000000 &axi_gpio_0 0x40000000 0x10000>,
                  <0x40010000 &axi_gpio_1 0x40010000 0x10000>,
                  <0x40020000 &axi_gpio_2 0x40020000 0x10000>,
@@ -159,7 +159,7 @@
                         xlnx,lockstep-select = <0x0>;
                         xlnx,lmb-data-size = <0x20>;
                         xlnx,ic-axi-mon = <0x0>;
-                        xlnx,enable-conversion = <0x0>;
+                        xlnx,enable-conversion = <0x1>;
                         xlnx,num-sync-ff-clk-irq = <0x1>;
                         xlnx,fsl-links = <0x0>;
                         timebase-frequency = <0x5f5e100>;
@@ -376,7 +376,7 @@
                         xlnx,arbitration = <0x0>;
                         xlnx,num-lmb = <0x1>;
                         xlnx,mask4 = <0x800000>;
-                        reg = <0x0 0x4000>;
+                        reg = <0x0 0x20000>;
                         xlnx,s-axi-ctrl-addr-width = <0x20>;
                         xlnx,mask5 = <0x800000>;
                         xlnx,ecc-status-registers = <0x0>;
@@ -570,7 +570,7 @@
                         xlnx,stimulus-freq = <0x1>;
                         xlnx,single-channel-enable-calibration;
                         xlnx,alarm-limit-r1 = <0x57e4>;
-                        xlnx,component-name = "MicroBlaze_xadc_wiz_0_0";
+                        xlnx,component-name = "Metal_Detector_xadc_wiz_0_0";
                         xlnx,external-muxaddr-enable = <0x0>;
                 };
         };
@@ -581,7 +581,7 @@
                 xlnx,ip-name = "lmb_bram_if_cntlr";
                 device_type = "memory";
                 memory_type = "memory";
-                reg = <0x0 0x4000>;
+                reg = <0x0 0x20000>;
         };
 
         chosen {
