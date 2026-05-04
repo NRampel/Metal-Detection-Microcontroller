@@ -156,32 +156,58 @@ drv_info:
     driver: gpio
     ip_name: axi_gpio
     path: C:\AMDDesignTools\2025.2\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\gpio_v4_12
+    examples:
+      xgpio_example.c: []
+      xgpio_low_level_example.c: []
+      xgpio_tapp_example.c: []
   axi_gpio_1:
     driver: gpio
     ip_name: axi_gpio
     path: C:\AMDDesignTools\2025.2\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\gpio_v4_12
+    examples:
+      xgpio_example.c: []
+      xgpio_low_level_example.c: []
+      xgpio_tapp_example.c: []
   axi_gpio_2:
     driver: gpio
     ip_name: axi_gpio
     path: C:\AMDDesignTools\2025.2\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\gpio_v4_12
+    examples:
+      xgpio_example.c: []
+      xgpio_low_level_example.c: []
+      xgpio_tapp_example.c: []
   axi_gpio_3:
     driver: gpio
     ip_name: axi_gpio
     path: C:\AMDDesignTools\2025.2\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\gpio_v4_12
+    examples:
+      xgpio_example.c: []
+      xgpio_low_level_example.c: []
+      xgpio_tapp_example.c: []
   axi_uartlite_0:
     driver: uartlite
     ip_name: axi_uartlite
     path: C:\AMDDesignTools\2025.2\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\uartlite_v3_12
+    examples:
+      xuartlite_low_level_example.c: []
+      xuartlite_polled_example.c: []
+      xuartlite_selftest_example.c: []
   microblaze_0_local_memory_dlmb_bram_if_cntlr:
     driver: bram
     ip_name: lmb_bram_if_cntlr
     path: C:\AMDDesignTools\2025.2\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\bram_v4_13
+    examples:
+      xbram_example.c: []
   pmod_encoder_0: None
   sensor_0: None
   xadc_wiz_0:
     driver: sysmon
     ip_name: xadc_wiz
     path: C:\AMDDesignTools\2025.2\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\sysmon_v7_10
+    examples:
+      xsysmon_polled_example.c: []
+      xsysmon_polled_printf_example.c: []
+      xsysmon_aux_polled_example.c: []
 lib_info:
   xiltimer:
     path: C:\AMDDesignTools\2025.2\Vitis\data\embeddedsw\lib\sw_services\xiltimer_v2_3

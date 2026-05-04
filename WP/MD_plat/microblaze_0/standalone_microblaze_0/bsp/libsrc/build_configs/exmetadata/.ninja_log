@@ -1,0 +1,17 @@
+# ninja log v5
+72	1887	0	CMakeFiles/sysmon_example	517138379e81e63b
+72	1887	0	xsysmon_exlist.yaml	517138379e81e63b
+72	1887	0	C:/Metal-Detector-Firmware/WP/MD_plat/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/sysmon_example	517138379e81e63b
+72	1887	0	C:/Metal-Detector-Firmware/WP/MD_plat/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/xsysmon_exlist.yaml	517138379e81e63b
+6	1916	0	CMakeFiles/gpio_example	27690e473fc07fe4
+6	1916	0	xgpio_exlist.yaml	27690e473fc07fe4
+6	1916	0	C:/Metal-Detector-Firmware/WP/MD_plat/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/gpio_example	27690e473fc07fe4
+6	1916	0	C:/Metal-Detector-Firmware/WP/MD_plat/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/xgpio_exlist.yaml	27690e473fc07fe4
+30	1946	0	CMakeFiles/uartlite_example	76526888bb7c2043
+30	1946	0	xuartlite_exlist.yaml	76526888bb7c2043
+30	1946	0	C:/Metal-Detector-Firmware/WP/MD_plat/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/uartlite_example	76526888bb7c2043
+30	1946	0	C:/Metal-Detector-Firmware/WP/MD_plat/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/xuartlite_exlist.yaml	76526888bb7c2043
+52	1947	0	CMakeFiles/bram_example	9d8abaccc7e0eaad
+52	1947	0	xbram_exlist.yaml	9d8abaccc7e0eaad
+52	1947	0	C:/Metal-Detector-Firmware/WP/MD_plat/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/bram_example	9d8abaccc7e0eaad
+52	1947	0	C:/Metal-Detector-Firmware/WP/MD_plat/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/xbram_exlist.yaml	9d8abaccc7e0eaad

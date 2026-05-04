@@ -95,7 +95,7 @@
       <File Path="$PSRCDIR/sources_1/imports/build/MD_app.elf">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../WP/MD_app/build/MD_app.elf"/>
-          <Attr Name="ImportTime" Val="1777816567"/>
+          <Attr Name="ImportTime" Val="1777849728"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="ScopedToRef" Val="Metal_Detector"/>
           <Attr Name="ScopedToCell" Val="microblaze_0"/>
@@ -190,6 +190,7 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
+      <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="Metal_Detector_wrapper"/>
@@ -361,9 +362,7 @@
   <Runs Version="1" Minor="22">
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="true" IncrementalCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Metal_Detector_wrapper.dcp" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -373,9 +372,7 @@
     </Run>
     <Run Id="Metal_Detector_axi_uartlite_0_0_synth_1" Type="Ft3:Synth" SrcSet="Metal_Detector_axi_uartlite_0_0" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_axi_uartlite_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Metal_Detector_axi_uartlite_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_axi_uartlite_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_axi_uartlite_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -385,9 +382,7 @@
     </Run>
     <Run Id="Metal_Detector_microblaze_0_0_synth_1" Type="Ft3:Synth" SrcSet="Metal_Detector_microblaze_0_0" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_microblaze_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Metal_Detector_microblaze_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_microblaze_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_microblaze_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -397,9 +392,7 @@
     </Run>
     <Run Id="Metal_Detector_ilmb_v10_2_synth_1" Type="Ft3:Synth" SrcSet="Metal_Detector_ilmb_v10_2" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_ilmb_v10_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Metal_Detector_ilmb_v10_2_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_ilmb_v10_2_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_ilmb_v10_2_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -409,9 +402,7 @@
     </Run>
     <Run Id="Metal_Detector_dlmb_bram_if_cntlr_2_synth_1" Type="Ft3:Synth" SrcSet="Metal_Detector_dlmb_bram_if_cntlr_2" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_dlmb_bram_if_cntlr_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Metal_Detector_dlmb_bram_if_cntlr_2_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_dlmb_bram_if_cntlr_2_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_dlmb_bram_if_cntlr_2_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -421,9 +412,7 @@
     </Run>
     <Run Id="Metal_Detector_dlmb_v10_2_synth_1" Type="Ft3:Synth" SrcSet="Metal_Detector_dlmb_v10_2" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_dlmb_v10_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Metal_Detector_dlmb_v10_2_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_dlmb_v10_2_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_dlmb_v10_2_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -433,9 +422,7 @@
     </Run>
     <Run Id="Metal_Detector_ilmb_bram_if_cntlr_2_synth_1" Type="Ft3:Synth" SrcSet="Metal_Detector_ilmb_bram_if_cntlr_2" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_ilmb_bram_if_cntlr_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Metal_Detector_ilmb_bram_if_cntlr_2_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_ilmb_bram_if_cntlr_2_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_ilmb_bram_if_cntlr_2_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -445,9 +432,7 @@
     </Run>
     <Run Id="Metal_Detector_lmb_bram_2_synth_1" Type="Ft3:Synth" SrcSet="Metal_Detector_lmb_bram_2" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_lmb_bram_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Metal_Detector_lmb_bram_2_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_lmb_bram_2_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_lmb_bram_2_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -457,9 +442,7 @@
     </Run>
     <Run Id="Metal_Detector_mdm_1_2_synth_1" Type="Ft3:Synth" SrcSet="Metal_Detector_mdm_1_2" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_mdm_1_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Metal_Detector_mdm_1_2_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_mdm_1_2_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_mdm_1_2_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -469,9 +452,7 @@
     </Run>
     <Run Id="Metal_Detector_rst_clk_wiz_1_100M_2_synth_1" Type="Ft3:Synth" SrcSet="Metal_Detector_rst_clk_wiz_1_100M_2" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_rst_clk_wiz_1_100M_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Metal_Detector_rst_clk_wiz_1_100M_2_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_rst_clk_wiz_1_100M_2_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_rst_clk_wiz_1_100M_2_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -481,9 +462,7 @@
     </Run>
     <Run Id="Metal_Detector_clk_wiz_1_2_synth_1" Type="Ft3:Synth" SrcSet="Metal_Detector_clk_wiz_1_2" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_clk_wiz_1_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Metal_Detector_clk_wiz_1_2_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_clk_wiz_1_2_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_clk_wiz_1_2_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -493,9 +472,7 @@
     </Run>
     <Run Id="Metal_Detector_axi_gpio_3_0_synth_1" Type="Ft3:Synth" SrcSet="Metal_Detector_axi_gpio_3_0" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_axi_gpio_3_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Metal_Detector_axi_gpio_3_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_axi_gpio_3_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_axi_gpio_3_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -505,9 +482,7 @@
     </Run>
     <Run Id="Metal_Detector_axi_gpio_1_0_synth_1" Type="Ft3:Synth" SrcSet="Metal_Detector_axi_gpio_1_0" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_axi_gpio_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Metal_Detector_axi_gpio_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_axi_gpio_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_axi_gpio_1_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -517,9 +492,7 @@
     </Run>
     <Run Id="Metal_Detector_axi_gpio_2_0_synth_1" Type="Ft3:Synth" SrcSet="Metal_Detector_axi_gpio_2_0" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_axi_gpio_2_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Metal_Detector_axi_gpio_2_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_axi_gpio_2_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_axi_gpio_2_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -529,9 +502,7 @@
     </Run>
     <Run Id="Metal_Detector_axi_gpio_0_0_synth_1" Type="Ft3:Synth" SrcSet="Metal_Detector_axi_gpio_0_0" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_axi_gpio_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Metal_Detector_axi_gpio_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_axi_gpio_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_axi_gpio_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -541,9 +512,7 @@
     </Run>
     <Run Id="Metal_Detector_pmod_encoder_0_0_synth_1" Type="Ft3:Synth" SrcSet="Metal_Detector_pmod_encoder_0_0" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_pmod_encoder_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Metal_Detector_pmod_encoder_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_pmod_encoder_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_pmod_encoder_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -553,9 +522,7 @@
     </Run>
     <Run Id="Metal_Detector_alarm_0_0_synth_1" Type="Ft3:Synth" SrcSet="Metal_Detector_alarm_0_0" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_alarm_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Metal_Detector_alarm_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_alarm_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_alarm_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -565,9 +532,7 @@
     </Run>
     <Run Id="Metal_Detector_xadc_wiz_0_0_synth_1" Type="Ft3:Synth" SrcSet="Metal_Detector_xadc_wiz_0_0" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_xadc_wiz_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Metal_Detector_xadc_wiz_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_xadc_wiz_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_xadc_wiz_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -577,9 +542,7 @@
     </Run>
     <Run Id="Metal_Detector_sensor_0_0_synth_1" Type="Ft3:Synth" SrcSet="Metal_Detector_sensor_0_0" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_sensor_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Metal_Detector_sensor_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_sensor_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_sensor_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -589,9 +552,7 @@
     </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1" LaunchOptions="-jobs 14 " AutoRQSDir="$PSRCDIR/utils_1/imports/impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -609,9 +570,7 @@
     </Run>
     <Run Id="Metal_Detector_axi_uartlite_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_axi_uartlite_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Metal_Detector_axi_uartlite_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_axi_uartlite_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_axi_uartlite_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -628,9 +587,7 @@
     </Run>
     <Run Id="Metal_Detector_microblaze_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_microblaze_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Metal_Detector_microblaze_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_microblaze_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_microblaze_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -647,9 +604,7 @@
     </Run>
     <Run Id="Metal_Detector_ilmb_v10_2_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_ilmb_v10_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Metal_Detector_ilmb_v10_2_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_ilmb_v10_2_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_ilmb_v10_2_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -666,9 +621,7 @@
     </Run>
     <Run Id="Metal_Detector_dlmb_bram_if_cntlr_2_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_dlmb_bram_if_cntlr_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Metal_Detector_dlmb_bram_if_cntlr_2_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_dlmb_bram_if_cntlr_2_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_dlmb_bram_if_cntlr_2_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -685,9 +638,7 @@
     </Run>
     <Run Id="Metal_Detector_dlmb_v10_2_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_dlmb_v10_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Metal_Detector_dlmb_v10_2_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_dlmb_v10_2_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_dlmb_v10_2_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -704,9 +655,7 @@
     </Run>
     <Run Id="Metal_Detector_ilmb_bram_if_cntlr_2_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_ilmb_bram_if_cntlr_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Metal_Detector_ilmb_bram_if_cntlr_2_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_ilmb_bram_if_cntlr_2_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_ilmb_bram_if_cntlr_2_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -723,9 +672,7 @@
     </Run>
     <Run Id="Metal_Detector_lmb_bram_2_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_lmb_bram_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Metal_Detector_lmb_bram_2_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_lmb_bram_2_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_lmb_bram_2_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -742,9 +689,7 @@
     </Run>
     <Run Id="Metal_Detector_mdm_1_2_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_mdm_1_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Metal_Detector_mdm_1_2_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_mdm_1_2_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_mdm_1_2_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -761,9 +706,7 @@
     </Run>
     <Run Id="Metal_Detector_rst_clk_wiz_1_100M_2_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_rst_clk_wiz_1_100M_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Metal_Detector_rst_clk_wiz_1_100M_2_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_rst_clk_wiz_1_100M_2_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_rst_clk_wiz_1_100M_2_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -780,9 +723,7 @@
     </Run>
     <Run Id="Metal_Detector_clk_wiz_1_2_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_clk_wiz_1_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Metal_Detector_clk_wiz_1_2_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_clk_wiz_1_2_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_clk_wiz_1_2_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -799,9 +740,7 @@
     </Run>
     <Run Id="Metal_Detector_axi_gpio_3_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_axi_gpio_3_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Metal_Detector_axi_gpio_3_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_axi_gpio_3_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_axi_gpio_3_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -818,9 +757,7 @@
     </Run>
     <Run Id="Metal_Detector_axi_gpio_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_axi_gpio_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Metal_Detector_axi_gpio_1_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_axi_gpio_1_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_axi_gpio_1_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -837,9 +774,7 @@
     </Run>
     <Run Id="Metal_Detector_axi_gpio_2_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_axi_gpio_2_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Metal_Detector_axi_gpio_2_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_axi_gpio_2_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_axi_gpio_2_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -856,9 +791,7 @@
     </Run>
     <Run Id="Metal_Detector_axi_gpio_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_axi_gpio_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Metal_Detector_axi_gpio_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_axi_gpio_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_axi_gpio_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -875,9 +808,7 @@
     </Run>
     <Run Id="Metal_Detector_pmod_encoder_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_pmod_encoder_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Metal_Detector_pmod_encoder_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_pmod_encoder_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_pmod_encoder_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -894,9 +825,7 @@
     </Run>
     <Run Id="Metal_Detector_alarm_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_alarm_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Metal_Detector_alarm_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_alarm_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_alarm_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -913,9 +842,7 @@
     </Run>
     <Run Id="Metal_Detector_xadc_wiz_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_xadc_wiz_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Metal_Detector_xadc_wiz_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_xadc_wiz_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_xadc_wiz_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -932,9 +859,7 @@
     </Run>
     <Run Id="Metal_Detector_sensor_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="Metal_Detector_sensor_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Metal_Detector_sensor_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Metal_Detector_sensor_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Metal_Detector_sensor_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

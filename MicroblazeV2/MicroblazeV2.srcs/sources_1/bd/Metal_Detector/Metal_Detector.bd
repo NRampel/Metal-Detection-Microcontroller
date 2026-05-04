@@ -1525,7 +1525,7 @@
       "file": {
         "name": "..\\..\\imports\\build\\MD_app.elf",
         "type": "ELF",
-        "checksum": "3181596909",
+        "checksum": "3501108392",
         "IsVisible": "1",
         "ScopedToRef": "Metal_Detector",
         "ScopedToCell": [

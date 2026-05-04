@@ -27,41 +27,25 @@ void seg_disp (uint8_t data[4], uint8_t cursor){
     if (current_lit_digit == cursor && cnt > 500) SEG = 0xff; 
 }
 
-void display_strength(volatile uint16_t voltage) {
-    uint16_t drop = ((voltage) < 2190) ? (2190 - (voltage)) : 0; 
-    uint8_t strength = drop / 120; 
-    if(strength > 16 ) strength = 16; 
-    if(strength == 16) LED = 0xFFFF; 
-    else LED = (1U << strength) - 1; 
+void display_strength(uint8_t size) {
+    switch(size) {
+        case 0: 
+            LED = 0x0000; 
+            break;
+        case 1: 
+            LED = 0x001F; 
+            break;
+        case 2: 
+            LED = 0x03FF; 
+            break;
+        case 3: 
+            LED = 0xFFFF; 
+            break;
+        default:
+            LED = 0x0000;
+            break;
+    }
 }
-
-// void display_sweep(uint8_t data) {
-//     const uint8_t size_lut[4] = {0x88, 0xc7, 0xf9, 0x92}; 
-//     static uint8_t cnt; 
-//     AN = 0xff; 
-//     SEG = size_lut[data[cnt]]; 
-    
-    
-//     // AN = 0xff; 
-//     // SEG = 0x88; //IN
-//     // AN = ~(1<<3); 
-//     // delay_us(250); 
-    
-//     // AN = 0xff; 
-//     // SEG = 0xc7; 
-//     // AN = ~(1<<2); 
-//     // delay_us(250); 
-    
-//     // AN = 0xff; 
-//     // SEG = 0xf9; 
-//     // AN = ~(1<<1); 
-//     // delay_us(250); 
-
-//     // AN = 0xff;    
-//     // SEG = 0x92; 
-//     // AN = ~(1<<0); 
-//     // delay_us(250); 
-// }
 
 void display_size_letters(uint8_t data[4]) {
     data[0] = 5; 

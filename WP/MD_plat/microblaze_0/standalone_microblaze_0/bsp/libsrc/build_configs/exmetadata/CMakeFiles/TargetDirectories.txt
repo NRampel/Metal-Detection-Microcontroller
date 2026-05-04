@@ -1,0 +1,6 @@
+C:/Metal-Detector-Firmware/WP/MD_plat/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/gpio_example.dir
+C:/Metal-Detector-Firmware/WP/MD_plat/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/uartlite_example.dir
+C:/Metal-Detector-Firmware/WP/MD_plat/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/bram_example.dir
+C:/Metal-Detector-Firmware/WP/MD_plat/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/sysmon_example.dir
+C:/Metal-Detector-Firmware/WP/MD_plat/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/edit_cache.dir
+C:/Metal-Detector-Firmware/WP/MD_plat/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/rebuild_cache.dir
