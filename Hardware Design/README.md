@@ -14,7 +14,7 @@
     * `seg[6:0]` & `an[3:0]`: Controls the multiplexed 4-digit 7-segment display for size classification and total object counts.
     * `JB[7:0]` & `dp[0:0]`: Controls additional I/O routing
 * **Custom Made Hardware IP Peripherals:**
-    * **Sensor V1:** Handles ultrasonic sensing within a 1 meter range.
+    * **Sensor V1:** Handles ultrasonic sensing with an effective range of 1 meter.
     * **PMOD Encoder:** Handles the PMOD encoder acccesory for the Basys3 Board
     * **Alarm:** Handles the alarm when an object is in close proximity 
   
