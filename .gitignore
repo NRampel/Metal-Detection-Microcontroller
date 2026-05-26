@@ -6,6 +6,7 @@
 *.cache/
 *.hw/
 *.sim/
+*.gen/
 
 # Ignore temporary Xilinx files and local IP files
 .Xil/
@@ -20,7 +21,7 @@ manage_ip_project/
 *.wdf
 *.dir/
 
-# Ignore generated bitstreams (unless you specifically want to track releases)
+# Ignore generated bitstreams
 *.bit
 *.bin
 
@@ -33,6 +34,9 @@ manage_ip_project/
 *.elf
 .clangd/
 compile_commands.json
+_ide/
+.rigel_lopper/
+vitis-comp.json
 
 
 # Ignore build directories
@@ -42,10 +46,16 @@ Release/
 .metadata/
 
 # Ignore generated hardware platforms and board support packages (BSPs)
-# Note: You usually want to regenerate these locally rather than tracking them
 *_hw_platform*/
 *_bsp*/
 *.xsa
+
+# CMake / C++ Tooling
+.compile_commands/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
 
 # =========================
 # VS Code & Environment
@@ -55,3 +65,6 @@ Release/
 *~
 .DS_Store
 
+# Misc & Backups 
+.mypy_cache/
+Backup/

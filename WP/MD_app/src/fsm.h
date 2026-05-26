@@ -2,8 +2,8 @@
 #include "basys3.h"
 
 #define T_ENTRY 2100
-#define T_SMALL 1925 //2000
-#define T_MED 1800 //1800
+#define T_SMALL 1925 
+#define T_MED 1800 
 #define T_TOUCH 500
 #define T_LARGE 1000
 #define T_RST 60
