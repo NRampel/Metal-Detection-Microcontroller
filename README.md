@@ -22,5 +22,5 @@ The implementation of a mealy-type Finite State Machine programmed on Vitis Unif
 * **Electronic Design Automation Tools:** ![Vivado](https://img.shields.io/badge/Vivado-000000?style=flat&logo=amd&logoColor=white) ![Vitis](https://img.shields.io/badge/Vitis-222222?style=flat&logo=amd&logoColor=white)
 
 ## Team Members: 
-* Nicolas Rampelotto
-* Andrew Liu
+* [Nicolas Rampelotto](https://github.com/NRampel) 
+* [Andrew Liu](https://github.com/AndrewLiu0227)
