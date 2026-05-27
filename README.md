@@ -10,6 +10,8 @@ The core sensing logic was implemented in HDL (see the tech stack). Rather than 
 
 ## Firmware Design 
 
+### Note: To see the Finite State Machine, check the WP folder
+
 The implementation of a mealy-type Finite State Machine programmed on Vitis Unified IDE, the application handles state management, filtering via an EMA Filter, debouncing via lockout counter and handling edge cases so no false readings are read. 
 
 ## Tech Stack: 
