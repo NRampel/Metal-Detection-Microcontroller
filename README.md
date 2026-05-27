@@ -4,13 +4,13 @@ A custom System-on-Chip(SoC) metal detection soft microcontroller implemented on
 
 ## Hardware Architecture
 
-### Note: To see the specs, check the hardware design folder
+#### Note: To see the specs, check the hardware design folder
 
 The core sensing logic was implemented in HDL (see the tech stack). Rather than relying on a standard hard-core processor for real time signal processing, the physical logic gates of the FPGA are configured into a soft-core MicroBlaze processor to detect the inductance changes from an external metal detection circuit caused by passing metal.
 
 ## Firmware Design 
 
-### Note: To see the Finite State Machine, check the WP folder
+#### Note: To see the Finite State Machine, check the WP folder
 
 The implementation of a mealy-type Finite State Machine programmed on Vitis Unified IDE, the application handles state management, filtering via an EMA Filter, debouncing via lockout counter and handling edge cases so no false readings are read. 
 
