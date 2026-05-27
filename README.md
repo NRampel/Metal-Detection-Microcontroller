@@ -20,3 +20,7 @@ The implementation of a mealy-type Finite State Machine programmed on Vitis Unif
 * **Hardware Description Languages:** ![VHDL](https://img.shields.io/badge/VHDL-%230090DB.svg?style=flat&logo=IEEE&logoColor=white) ![SystemVerilog](https://img.shields.io/badge/-SystemVerilog-1D4879?style=flat&logo=ieee&logoColor=white)
 * **Software Programming Languages:** Embedded ![C](https://img.shields.io/badge/c-%2300599C.svg?style=flat&logo=c&logoColor=white)
 * **Electronic Design Automation Tools:** ![Vivado](https://img.shields.io/badge/Vivado-000000?style=flat&logo=amd&logoColor=white) ![Vitis](https://img.shields.io/badge/Vitis-222222?style=flat&logo=amd&logoColor=white)
+
+## Team Members: 
+* Nicolas Rampelotto
+* Andrew Liu
